@@ -16,17 +16,17 @@
 </head>
 
 <body>
-    <section class="container-fluid ">
+    <section class="container-fluid">
         <header class="row">
             <picture class="col">
                 <img src="Logo_2.png" alt="logo" class="rounded mx-auto d-block">
             </picture>
         </header>
-        <header class="row rounded mx-2 my-2 navigation bg-dark">
+        <header class="row rounded mx-2 my-2 navigation bg-dark text-white">
             <section class="col">
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
+                        <a class="nav-link" href="index.html">
                             Welcome
                         </a>
                     </li>
@@ -46,47 +46,57 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">
+                        <a class="nav-link active" href="Contact.html">
                             Contact
                         </a>
                     </li>
                 </ul>
-            </section>
         </header>
-        <aside class="row mx-2 my-2 rounded d-flex align-items-center justify-content-center text-white">
-            <section class="col text-center bg-dark rounded">
-                <a href="Pictures.html">
-                Cliqeur ICI pour voir notre Menu fantastique!
-            </br>
-                Vous n'en reviendrez pas de notre 6ème plat!
-            </a>
-            </section> 
+        <aside class="row text-center mx-2 my-2 rounded">
+            <section class="col">
+                <h1>Contact</h1>
+            </section>
         </aside>
-        <main class="row mx-2 my-2 rounded text-white">
-            <picture class="col-sm col-md-8 mx-2 my-2">
-                <img src="Salle_2.webp" class="img-fluid d-block rounded">
-            </picture>
-            <aside class="col mx-2 my-3">
+        <main class="row mx-2 my-2 rounded">
+            <aside class="col-sm-12 col-md-6 my-2">
                 <section class="row">
-                    <article class="col">
-                        <p class="text-center">
-                            Avez vous vu les info's?
-                        </br>
-                            Il parrait qu'une maladie mortelle circule...
-                        </p>
-                    </article>
+                    <section class="col">
+                        <label for="InputFN" class="form-label">Prénom</label>
+                        <input type="text" class="form-control" id="InputFN">
+                    </section>
                 </section>
                 <section class="row">
-                    <article class="col mx-2 my-3">
-                        <p class="text-center">
-                            Plat du jour:
-                        </br>
-                        Je suis a sec a cause du corona...
-                    </br>
-                        Maudit ch*****
-                        </p>
-                    </article>
+                    <section class="col">
+                        <label for="InputLN" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="InputLN">
+                    </section>
                 </section>
+                <section class="row">
+                    <section class="col">
+                        <label for="InputEmail" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="InputFN" aria-describedby="EmailHelp">
+                    </section>
+                </section>
+            </aside>
+            <aside class="col-sm-12 col-md-6 my-2">
+                <section class="row">
+                    <section class="col">
+                        <label for="select" class="form-label">Sujet</label>
+                        </br>
+                        <select id="select" class="form-select">
+                            <option>Prendre Rendez-vous</option>
+                            <option>Introduire un plainte</option>
+                            <option>Vegan?</option>
+                        </select>
+                    </section>
+                </section>
+                <section class="row">
+                    <section class="col">
+                        <label for="TextArea">Message</label>
+                        <textarea class="form-control" id="TextArea" rows="4"></textarea>
+                    </section>
+                </section>
+
             </aside>
         </main>
         <footer class="row mx-2 my-2 rounded bg-dark">
